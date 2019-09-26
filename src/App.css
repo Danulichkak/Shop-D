@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+} 
+.App {
+  text-align: center;
+}
+
+.App-header{
+  margin: 5px;
+}
+
+.App-header_letf {
+  float: left;
+  height: 200px;
+  margin: 10px, 5px;
+  padding: 5px;
+}
+
+.App-logo{
+  height: 100px;
+}
+
+.App-header_center{
+  float: left;
+  width: 60%;
+  height: 200px;
+  color: brown;
+  margin: 10px, 5px;
+  padding: 5px;
+  font-family: 'Muli', sans-serif;
+}
+
+.App-header_center h2{
+  color: rgb(230, 76, 76);
+}
+
+.App-header_right{
+  float: right;
+  height: 200px;
+  margin: 10px, 5px;
+  padding: 5px;
+}
+
+ h3, p, a{
+  color: brown;
+  font-family: 'Muli', sans-serif;
+  text-decoration: none;
+}
+
+
+.top_menu{
+  list-style: none;
+  width: 100vw;
+  margin: auto;
+  justify-content: space-around;
+  float: left;
+  display: flex;
+}
+
+.top_menu li{
+  display: inline-block;
+  padding: 20px 20px;
+
+  
+}
+
+li a{
+  text-align: left;
+  padding: 10px;
+  padding-right: 10px;
+  padding-left: 0px;
+  color: rgb(138, 13, 13);
+  transition: 1s;
+  border-right: 1px solid rgb(103, 33, 33);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+li :hover{
+  color: rgb(103, 23, 23);
+  font-weight: 800;
+  transition: 0.5s;
+  font-size: 30px;
+  
+  
+}
+a.active, a.wfm-active {
+  font-weight: bold;
+  color: rgb(202, 63, 63);
+  font-size: 30px;
+}
+
+
+.fas{
+  width: 10px;
+  height:10px;
+  margin: 0px 10px;
+}
+
+a:not(.noBr) {
+  border: none;
+}
+
+.noBr {
+  text-decoration: none;
+  
+}
+
+ul :nth-of-type(1n+8){
+  padding: 20px  0px;
+  float: right; 
+}
+
+li .pos{
+  padding: 20px  5px;
+}
+.home{
+  float: left;
+  margin: 5px;
+  clear:both;
+}
+
+.row{
+  float: left;
+  margin: 5px;
+  clear:both;
+  
+}
+
+.footer{
+  list-style: none;
+  width: 100vw;
+  margin: auto;
+  justify-content: space-around;
+  float: left;
+  display: flex;
+}
+
+.footer a{
+    text-align: left;
+    color: rgb(138, 13, 13);
+    transition: 1s;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+.footer li :hover{
+  color: rgb(103, 23, 23);
+  font-weight: 800;
+  transition: 0.5s;
+  font-size: 30px;
+  
+  
+}
+.footer a.active, a.wfm-active {
+  font-weight: bold;
+  color: rgb(202, 63, 63);
+  font-size: 30px;
+}
+
+
