@@ -14,10 +14,6 @@ import productsData from './data/products.json';
 
 
 
-
-
-
-
 class App extends Component {
   constructor(props) {
     super(props);

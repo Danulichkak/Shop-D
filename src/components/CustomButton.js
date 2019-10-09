@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 
 
 export default class CustomButton extends Component {
-  
-       constructor(props) {
+
+    constructor(props) {
         super(props);
         this.state = {
             data: {
