@@ -1,0 +1,49 @@
+
+/*---------services---------*/
+
+.services{
+    text-align: center;
+    margin-top: 10px;
+    width: 45%;
+    border-spacing: 2px;
+    border-color: grey;
+    font-size: 18px;
+    color: #292929;
+    margin: auto;
+}
+
+.services tr{
+    padding: 5x;
+}
+
+
+/*---------contacts---------*/
+ 
+
+/*---------multimediaTech---------*/   
+
+.multiPrice {
+    margin: auto;
+    width: 80%;
+}
+
+.multiPrice li{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.AllMultimediaPrice{ 
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+/*---------climaticTech---------*/  
+
+.ClimaticTech h3 h5 {
+    padding: 10px;
+}
+
+.border1 {
+    border: 1px;
+}

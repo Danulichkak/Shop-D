@@ -2,19 +2,35 @@
   margin: 0;
   padding: 0;
 } 
+
+html,
+body {
+	height: 100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .App {
   text-align: center;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ /*---------header---------*/
+
+.App-header{
+  margin: 5px;
+  height: 20hv;
+    
 }
 
 .App-header{
   margin: 5px;
+  height: 20hv;
 }
-
 .App-header_letf {
   float: left;
-  height: 200px;
+  height: 150px;
   margin: 10px, 5px;
-  padding: 5px;
 }
 
 .App-logo{
@@ -23,51 +39,65 @@
 
 .App-header_center{
   float: left;
-  width: 60%;
-  height: 200px;
+  width: 50%;
+  height: 150px;
   color: brown;
   margin: 10px, 5px;
-  padding: 5px;
   font-family: 'Muli', sans-serif;
 }
 
-.App-header_center h2{
+.App-header_center h3{
   color: rgb(230, 76, 76);
 }
 
 .App-header_right{
   float: right;
-  height: 200px;
-  margin: 10px, 5px;
-  padding: 5px;
+  height: 150px;
+  padding-right: 10px;
+  margin: 5px, 5px; 
+  width: 20%;
+  font-size: 12px;
 }
 
- h3, p, a{
+.contacts h3, h4, p, a{
   color: brown;
   font-family: 'Muli', sans-serif;
   text-decoration: none;
+  padding: 2px;
+  margin: 0px;
+     
 }
 
+ h3, h4, p, a{
+  color: brown;
+  font-family: 'Muli', sans-serif;
+  text-decoration: none;
+  padding: 2px;
+  margin: 0px;
+     
+}
 
 .top_menu{
   list-style: none;
-  width: 100vw;
-  margin: auto;
+  width: 100%;
   justify-content: space-around;
   float: left;
   display: flex;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background: #d8d8d8;
+  margin-bottom: 0px;
+   
 }
 
 .top_menu li{
   display: inline-block;
-  padding: 20px 20px;
-
-  
+  position: relative;
+  padding: 10px 10px;
 }
 
-li a{
+.top_menu li a{
   text-align: left;
-  padding: 10px;
+  padding: 5px;
   padding-right: 10px;
   padding-left: 0px;
   color: rgb(138, 13, 13);
@@ -75,28 +105,24 @@ li a{
   border-right: 1px solid rgb(103, 33, 33);
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 200;
 }
 
-li :hover{
+.top_menu li :hover{
   color: rgb(103, 23, 23);
   font-weight: 800;
   transition: 0.5s;
-  font-size: 30px;
-  
-  
+  font-size: 20px;
 }
-a.active, a.wfm-active {
+
+.top_menu  a.active, a.wfm-active {
   font-weight: bold;
   color: rgb(202, 63, 63);
-  font-size: 30px;
+  font-size: 20px;
 }
 
-
 .fas{
-  width: 10px;
-  height:10px;
   margin: 0px 10px;
 }
 
@@ -109,57 +135,83 @@ a:not(.noBr) {
   
 }
 
-ul :nth-of-type(1n+8){
-  padding: 20px  0px;
-  float: right; 
-}
-
 li .pos{
   padding: 20px  5px;
 }
-.home{
+
+
+/*---------content---------*/
+
+.content {
   float: left;
-  margin: 5px;
   clear:both;
+  background: #f6f6f6;
+  display: block;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  position: relative;
+  min-width: 980px; 
+  padding: 10px;
 }
 
-.row{
-  float: left;
-  margin: 5px;
-  clear:both;
+.call{
+    position: fixed;
+    margin-left: 90%;
+    margin-top: 50vh;
+    width: 45px;
+}
+.call i{
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border: 2px solid brown;
+    border-radius: 5px;
+    
+}
+
+.fa-phone{
+    font-size: 40px;
+    margin:  auto;
+    
+}
+
+/*---------footer---------*/
+.footer{
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  background: rgb(131, 131, 131);
+  height: 80px;
+  width: 100%;
+  margin-top: -80px;
+  position: relative;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.footer li a{
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 1s;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
   
 }
 
-.footer{
-  list-style: none;
-  width: 100vw;
-  margin: auto;
-  justify-content: space-around;
-  float: left;
-  display: flex;
-}
-
-.footer a{
-    text-align: left;
-    color: rgb(138, 13, 13);
-    transition: 1s;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 200;
-}
 .footer li :hover{
   color: rgb(103, 23, 23);
   font-weight: 800;
   transition: 0.5s;
-  font-size: 30px;
-  
-  
+  font-size: 14px;
 }
+
 .footer a.active, a.wfm-active {
-  font-weight: bold;
-  color: rgb(202, 63, 63);
-  font-size: 30px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 

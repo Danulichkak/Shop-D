@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Air Max",
+      "brand": "Nike",
+      "size": [{"sizeName": "M", "count": 3}, {"sizeName": "L", "count": 5}],
+      "price": 3500,
+      "gender": "male",
+      "discount": 0.25,
+      "isPresent": true,
+      "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/azmihba3pidhx72i7div/%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8-air-max-97-z3TlrlVN.jpg",
+      "addedToCart": false
+    },
+    {
+      "id": 2,
+      "name": "Air Max 2",
+      "brand": "Nike",
+      "size": [{"sizeName": "M", "count": 3}, {"sizeName": "L", "count": 5}],
+      "price": 3500,
+      "gender": "male",
+      "discount": 0,
+      "isPresent": true,
+      "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/azmihba3pidhx72i7div/%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8-air-max-97-z3TlrlVN.jpg",
+      "addedToCart": false
+    }
+  ]
