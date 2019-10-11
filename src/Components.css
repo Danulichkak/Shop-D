@@ -47,3 +47,46 @@
 .border1 {
     border: 1px;
 }
+
+/*---------stationery---------*/ 
+
+.card-body{
+    height: 7vh;
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    
+}
+
+.card-body span{
+    padding: 5px; 
+}
+
+.priceProd{
+    font-size: 18px;
+    color: #292929;
+    font-weight: 700;
+}
+
+.btn-success{
+    float: right;
+    height: 35px;
+    margin: -15px 10px;
+    box-shadow: 0 1px 3px 0 rgba(207, 49, 49, 0.3);
+    
+}
+
+.btn-success:hover{
+    color: rgb(103, 23, 23);
+    transition: 0.1s;
+    background: #ada6a6;
+
+  }
+  
+  .btn-success:active{
+    color: rgb(255, 255, 255);
+    transition: 0.1s;
+    background: #4e3838;
+  }

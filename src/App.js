@@ -4,6 +4,7 @@ import './Components.css';
 import moment from 'moment';
 import {Route, NavLink} from 'react-router-dom';
 import CustomButton from './components/CustomButton';
+import Home from './components/Home';
 import Stationery from './components/Stationery';
 import ClimaticTech from './components/ClimaticTech';
 import MultimediaTech from './components/MultimediaTech';
@@ -46,7 +47,7 @@ class App extends Component {
               <p><i className="fas fa-mobile-alt"></i> +38 066 357 78 33 Валерій</p>
               <p><i className="fas fa-mobile-alt"></i><i className="fab fa-viber"></i> +38 066 290 04 13 Павло</p>
               <p><i className="fas fa-mobile-alt"></i><i className="fab fa-viber"></i> +38 066 799 28 10 Сергій</p>
-              <p><i className="far fa-envelope"></i><a class="user__mail-address" href="mailto: bal.okhtyrka@gmail.com">e-mail: bal.okhtyrka@gmail.com</a></p>
+              <p><i className="far fa-envelope"></i><a className="user__mail-address" href="mailto: bal.okhtyrka@gmail.com">e-mail: bal.okhtyrka@gmail.com</a></p>
             </div>
 
           </div>
@@ -64,7 +65,7 @@ class App extends Component {
           
         </header>
         <div className="content">
-            <Route path="/" exact render ={ () => <h1 className="home">Головна</h1>}/>
+            <Route path="/" exact component ={Home}/>
             <Route path ="/stationery" component ={Stationery} productsData={productsData}/>
             <Route path ="/climaticTech" component ={ClimaticTech}/>
             <Route path ="/multimediaTech" component ={MultimediaTech}/>
