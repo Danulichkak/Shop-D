@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top_menu{
+    list-style: none;
+    width: 100vw;
+    margin: auto;
+    justify-content: space-around;
+    background: rgb(145, 186, 157);
+    
+}
+
+.top_menu li{
+    display: inline-block;
+    padding: 20px 20px;
+  
+    
+}
+
+li a{
+    text-align: left;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 0px;
+    color: rgb(106, 118, 132);
+    transition: 1s;
+    border-right: 1px solid rgb(30, 90, 71);
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+}
+
+li :hover{
+    color: rgb(32, 84, 48);
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.fas{
+    width: 10px;
+    height:10px;
+    margin: 0px 10px;
+}
+
+a:not(.noBr) {
+    border: none;
+}
+.noBr {
+    text-decoration: none;
+    
+}
+ul :nth-of-type(1n+8){
+    float: right; 
+}
+
+li .pos{
+    padding: 20px  5px;
+}
+
+ul :nth-of-type(1n+8){
+    padding: 20px  0px;
+}
+.nameShop{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    color:  rgb(14, 99, 39);
+    background: rgb(197, 240, 210);
+}
