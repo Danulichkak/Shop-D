@@ -18,17 +18,12 @@ body {
  /*---------header---------*/
 
 .App-header{
-  margin: 5px;
+
   height: 20hv;
   width: 100%;
 
-    
 }
 
-.App-header{
-  margin: 5px;
-  height: 20hv;
-}
 .App-header_letf {
   float: left;
   height: 150px;
@@ -42,7 +37,7 @@ body {
 .App-header_center{
   float: left;
   width: 50%;
-  height: 150px;
+  height: 180px;
   color: brown;
   margin: 10px, 5px;
   font-family: 'Muli', sans-serif;
@@ -50,6 +45,9 @@ body {
 
 .App-header_center h3{
   color: rgb(230, 76, 76);
+  padding: 0px;
+  
+
 }
 
 .App-header_right{
@@ -61,21 +59,22 @@ body {
   font-size: 12px;
 }
 
-.contacts h3, h4, p, a{
+.contacts h3, p, a{
   color: brown;
   font-family: 'Muli', sans-serif;
   text-decoration: none;
-  padding: 2px;
+  padding: 0px;
   margin: 0px;
      
 }
 
- h3, h4, p, a{
+ h2, h3, h4, h5, p, a{
   color: brown;
   font-family: 'Muli', sans-serif;
   text-decoration: none;
-  padding: 2px;
+  padding: 0px;
   margin: 0px;
+  
      
 }
 
@@ -125,7 +124,7 @@ body {
 }
 
 .fas{
-  margin: 0px 10px;
+  margin: 0px;
 }
 
 a:not(.noBr) {
@@ -160,19 +159,58 @@ li .pos{
 
 .call{
     position: fixed;
-    margin-left: 90%;
+    margin-left: 83%;
     margin-top: 50vh;
     width: 45px;
 }
+
 .call i{
     position: fixed;
     height: 45px;
     width: 45px;
     text-align: center;
     border: 2px solid brown;
-    border-radius: 5px;
-    
+    border-radius: 5px;  
 }
+
+.call  :hover{
+  color: rgb(103, 23, 23);
+  font-weight: 800;
+  transition: 1.0 s;
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
 
 .fa-phone{
     font-size: 40px;

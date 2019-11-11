@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProductstoreServiceConsumer} from '../ productstore-service-context';
+import {ProductstoreServiceConsumer} from '../productstore-service-context';
 
 const withProductstoreService = () => (Wrapped) => {
     return ( props) =>{
@@ -7,8 +7,8 @@ const withProductstoreService = () => (Wrapped) => {
             <ProductstoreServiceConsumer>
                 {
                     (productstoreService) =>{
-                        <Wrapped {...props} 
-                            productstoreService={productystoreService}/>;
+                        return (<Wrapped {...props} 
+                            productstoreService={productstoreService}/>);
                     }
                 }
             </ProductstoreServiceConsumer>

@@ -1,0 +1,7 @@
+.product-list div{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    background: rgb(231, 222, 222);
+    margin: 0.3rem;
+}
