@@ -41,7 +41,7 @@
     color: rgb(31, 2, 2);
 }
 
-.product-list-item button{
+.product-list-item .btn{
     background: rgb(94, 27, 27);
     border: 2px solid rgb(31, 2, 2);
     color: white;

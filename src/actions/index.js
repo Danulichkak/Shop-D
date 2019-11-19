@@ -38,7 +38,7 @@ export const allProductsRemovedFormCart = (productId) =>{
         payload: productId
     };
 };
-const fetchProducts =(productstoreService, dispatch) => () =>{
+const fetchProducts =(productstoreService) => () => (dispatch) =>{
     dispatch(productsRequested());
     productstoreService.getProducts()
     .then ((data) => dispatch(productsLoaded(data)))

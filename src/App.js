@@ -12,8 +12,9 @@ import MultimediaTech from './components/page/MultimediaTech';
 import Services from './components/page/Services';
 import Contacts from './components/page/Contacts';
 
-import productsData from './data/products.json';
 
+
+import productsData from './data/products.json';
 
 
 class App extends Component {
@@ -35,7 +36,7 @@ class App extends Component {
             <img src="./944_1.jpg" className="App-logo" alt="logo" />
           </div>
           <div className="App-header_center">
-            <h3> Комп'ютерна, офісна та побутова техніка. Музичне обладнання. Канцтовари. Відеоспостереження. Кліматична техніка.</h3>
+            <h4> Комп'ютерна, офісна та побутова техніка. Музичне обладнання. Канцтовари. Відеоспостереження. Кліматична техніка.</h4>
             <h5> Ремонт та обслуговування комп'ютерної, офісної та побутової техніки. Фото та відео послуги. Ремонт мобільних телефонів.</h5>
           </div>
           <div className="App-header_right">
@@ -51,7 +52,7 @@ class App extends Component {
               <p><i className="fas fa-mobile-alt"></i><i className="fab fa-viber"></i> +38 066 799 28 10 Сергій</p>
               <p><i className="far fa-envelope"></i><a className="user__mail-address" href="mailto: bal.okhtyrka@gmail.com">e-mail: bal.okhtyrka@gmail.com</a></p>
             </div>
-            <ShopHeaderCart numItems={5} total={210}/>
+            {/* <ShopHeaderCart Items={5} total={210}/> */}
           </div>
             <nav className="nav-menu">
               <ul className="top_menu">
@@ -75,12 +76,28 @@ class App extends Component {
             <Route path ="/contacts" component ={Contacts}/>
             <Route path="/shoppingCartTable" component={ShoppingCartTable} />
                 
-       </div>
+      </div>
+      <buttom type="button" class="callback-bt callback_email">
+          <div className=" text-call callback_email">
+          <i className="fas fa-phone"></i> 
+            <div>
+                <div id="okno">
+                  
+                </div>
+                <a ><span>Зворотній дзв’інок</span></a>
+            </div>
+            
+          </div>
+      </buttom>
 
-       <div className="call">
-           <NavLink className="noBr" to="/contacts"><i className="fas fa-phone"></i> </NavLink>
-       </div>
-       <footer>
+      <buttom type="button" class="email-bt callback_email">
+        <div class="text-call callback_email">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <NavLink className="noBr" to="/contacts"><span >Зворотній зв’язок</span></NavLink>
+        </div>
+      </buttom>
+
+      <footer>
                 
             <ul className="footer">
               <li><NavLink className="noBr" to="/" exact>Головна</NavLink> </li>
@@ -90,6 +107,7 @@ class App extends Component {
               <li><NavLink className="noBr" to="/services">Послуги</NavLink></li>
               <li><NavLink className="noBr" to="/contacts">Контакти</NavLink></li>
             </ul>
+            <div> &copy; 2019 Усі права захищені </div>
        </footer>
       
       </div>

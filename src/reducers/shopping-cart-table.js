@@ -55,7 +55,7 @@ const updateShoppingCart =(state, action) =>{
     if(state === undefined){
         return{
             cartItems: [],
-            orderTotal:0
+            orderTotal:0,
         };
     }
     switch (action.type){

@@ -7,4 +7,24 @@
 .shopping-cart-table  button{
     margin-left: 5px;
     margin-top: 5px;
+    background: rgb(94, 27, 27);
+    border: 2px solid rgb(31, 2, 2);
+    color: white;
+    
+}
+.shopping-cart-table  button:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.1s;
+    background:#3d1515;
+    border: 2px solid rgb(58, 5, 5);
+}
+
+.shopping-cart-table button:active{
+    list-style: none;
+    color:  rgb(216, 216, 216);
+    transition: 0.1s;
+    background: #701d1d;
+    border: 2px solid rgb(73, 13, 13);
+    box-shadow: 0 1px 1px rgba(122, 25, 25, 0.979) inset, 0 0 8px rgba(192, 31, 31, 0.6);
+   outline: 0 none;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './shoppingCartTable.css';
 import { connect } from 'react-redux';
+import Form from '../formUser/formUser';
 import {
     productAddedToCart,
     productRemovedFormCart, 
@@ -54,9 +55,16 @@ const ShoppingCartTable = ({items, total, onIncrease, onDecrease, onDelete }) =>
                 </tbody>
             </table>
             <div className="total"> 
-                Разом: {total} 
+            <h5> Загальна вартіть {total} грн</h5>
+           
             </div>
-
+            <button
+                className="btn buying" title="оформити замовлення">
+               породовжити покупки
+               
+            </button>
+            
+            <Form/>
         </div>
     );
 };
@@ -78,50 +86,3 @@ const mapDispatchToProps = {
 
 export default connect(mapStateToProps, mapDispatchToProps) (ShoppingCartTable);
 
-// export default class CustomButton extends Component {
-
-// const CustomButton = () => {
-//     return(
-//         <div className ="shopping-cart-table">
-//             <h2>Ваше замовлення</h2>
-
-//         </div>
-//     );
-
-// };
-
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             data: {
-//                 clickCounter: 0
-//             }
-//         };
-//     }
-
-//     handleClick = () => {
-//         let clickCounter = this.state.data.clickCounter;
-//         alert(`Clicked: ${++clickCounter}`);
-//         this.setState({
-//             data: {
-//                 clickCounter: clickCounter
-//             }
-//         });
-//     };
-//     list = ["item1", "item2", "item3"];
-
-//     result = <ul>
-//         {this.list.map(item => <li key={item}>{item}</li>)}
-//     </ul>;
-
-//     render() {
-//         return (
-//             <div>
-//                 {this.result}
-//                 <button id={this.id} onClick={this.handleClick} className="btn btn-danger">
-//                     {this.props.route.label} {this.state.data.clickCounter}
-//                 </button>
-//             </div>
-//         );
-//     }
-// }

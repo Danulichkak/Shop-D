@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProductListItem from '../product-list-item';
 import './product-list.css';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Spinner from '../spinner';
 import ErrorIndicator from '../error-indicator';
@@ -54,11 +55,10 @@ const mapStateToProps = ({productList: {products, loading, error}}) => {
 };
  
 const mapDispatchToProps = (dispatch, {productstoreService}) =>{
-    return {
-        fetchProducts: fetchProducts (productstoreService, dispatch),
-        onAddedToCart: (id) => dispatch(productAddedToCart (id))
-       
-    };
+    return bindActionCreators({
+        fetchProducts: fetchProducts(productstoreService),
+        onAddedToCart: productAddedToCart 
+    }, dispatch);
  };
 
 export default compose(
