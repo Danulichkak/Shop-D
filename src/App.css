@@ -70,6 +70,7 @@ body {
 }
 
  h2, h3, h4, h5, p, a{
+  text-decoration: none;
   color: brown;
   font-family: 'Muli', sans-serif;
   text-decoration: none;
@@ -111,14 +112,14 @@ body {
   font-weight: 200;
 }
 
-.top_menu li, a :hover{
+.top_menu li :hover{
   color: rgb(103, 23, 23);
   font-weight: 800;
   transition: 0.5s;
   font-size: 20px;
+  text-decoration: none;
+  
 }
-
-
 
 .top_menu  a.active, a.wfm-active {
   font-weight: bold;
@@ -142,7 +143,6 @@ a:not(.noBr) {
 li .pos{
   padding: 20px  5px;
 }
-
 
 /*---------content---------*/
 
@@ -175,7 +175,7 @@ li .pos{
   text-align:center;
   width:68px;
   position: fixed;
-  right: 8%;
+  right: 9%;
   bottom: 18%;
   z-index:999;
   transition:.3s;
@@ -397,7 +397,7 @@ transform: rotateZ(0deg);
   text-align:center;
   width:68px;
   position: fixed;
-  left: 8%;
+  left: 9%;
   bottom: 18%;
   z-index:999;
   transition:.3s;
@@ -445,7 +445,7 @@ display:none;
   transition:.3s;
 }
 .email-bt:hover i {
-  color:#38a3fd;
+  color:brown;
   font-size:40px;
   transition:.3s;
 }
@@ -550,21 +550,49 @@ opacity: 0;
   font-weight: 800;
   transition: 0.5s;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .footer a.active, a.wfm-active {
   font-weight: 600;
   font-size: 14px;
 }
-
+ /*---------callback---------*/
 #okno {
-  width: 300px;
-  height: 400px;
+  background:rgb(230, 221, 221);
+  width: 20rem;
+  height:11.5rem;
   text-align: center;
   padding: 15px;
-  border: 3px solid #0000cc;
+  border: 2px solid brown;
   border-radius: 10px;
-  color: #0000cc;
+  color: brown;
   display: none;
+  position: absolute;
+  top: -5rem;
+  right: 0;
+  bottom:-25rem;
+  left: -15rem;
+  
 }
 #okno:target {display: block;}
+.close {
+  position: absolute;
+  display: inline-block;
+  border: 1px solid brown;
+  color: white;
+  padding: 0px;
+  margin: 5px;
+  text-decoration: none;
+  background: black;
+  font-size: 14px;
+  cursor:pointer;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height:20px;
+  
+}
+.close:hover {background: #e6e6ff;}
+
+

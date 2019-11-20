@@ -46,7 +46,6 @@ class ProductListContainer extends Component {
         }
 
         return <ProductList products={products}  onAddedToCart = { onAddedToCart} />;
-        
     }
 } 
 

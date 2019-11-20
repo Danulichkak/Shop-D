@@ -1,41 +1,33 @@
-label {
-    width: 20%;
-    font-size: 1.2rem;
+.callbackFormUser label {
+    width: 30%;
+    font-size: 1rem;
+    color: rgb(44, 2, 2);
 }
 
-input {
-    width: 50%;
-    padding: 5px 5px;
+.callbackFormUser input {
+    width: 70%;
+    padding: 5px 0px;
     margin: 5px 0px;
     box-sizing: border-box;
     border: 2px solid brown;
 }
 
-textarea{
-    width: 50%;
-    height: 100px;
-    padding: 5px 5px;
-    margin: 10px 0px;
-    box-sizing: border-box;
-    border: 2px solid brown;
-    resize: vertical;
-}
-
-input [type=submit]{
+.callbackFormUser input [type=submit]{
     background-color: brown;
     border: none;
     color: white;
+    width: 60%;
     padding: 8px 36px;
     
 }
-.form_title {
+.callbackFormUser .form_title {
     margin: 10px;
     margin-top: 20px;
 }
 
 
 
-.formTable{
+.callbackFormUser .formTable{
     background: rgb(94, 27, 27);
     border: 2px solid rgb(31, 2, 2);
     color: white;
@@ -44,14 +36,14 @@ input [type=submit]{
     border-radius: 2px;
 }
 
-.formTable:hover{
+.callbackFormUser .formTable:hover{
     color: rgb(255, 255, 255);
     transition: 0.1s;
     background:#3d1515;
     border: 2px solid rgb(58, 5, 5);
 }
 
-.formTable:active{
+.callbackFormUser .formTable:active{
     list-style: none;
     color:  rgb(216, 216, 216);
     transition: 0.1s;
@@ -60,7 +52,7 @@ input [type=submit]{
     box-shadow: 0 1px 1px rgba(122, 25, 25, 0.979) inset, 0 0 8px rgba(192, 31, 31, 0.6);
     outline: 0 none;
   }
-.formTable:focus{
+.callbackFormUser .formTable:focus{
    border-color: rgba(102, 34, 34, 0.8);
    box-shadow: 0 1px 1px rgba(122, 25, 25, 0.979) inset, 0 0 8px rgba(192, 31, 31, 0.6);
    outline: 0 none;

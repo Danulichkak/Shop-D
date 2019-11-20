@@ -11,6 +11,7 @@ import ClimaticTech from './components/page/ClimaticTech';
 import MultimediaTech from './components/page/MultimediaTech';
 import Services from './components/page/Services';
 import Contacts from './components/page/Contacts';
+import CallbackForm from './components/page/callback_window/callback_window';
 
 
 
@@ -77,25 +78,26 @@ class App extends Component {
             <Route path="/shoppingCartTable" component={ShoppingCartTable} />
                 
       </div>
-      <buttom type="button" class="callback-bt callback_email">
+      <button type="button" class="callback-bt callback_email">
           <div className=" text-call callback_email">
           <i className="fas fa-phone"></i> 
-            <div>
-                <div id="okno">
-                  
-                </div>
-                <a ><span>Зворотній дзв’інок</span></a>
-            </div>
-            
+          
+          <a href="#okno"><span>Замовити дзвінок</span></a>
           </div>
-      </buttom>
+          <div id="okno">
+              Замовити дзвінок
+              <CallbackForm/><br/>
+                <a href="#" class="close">Close</a>
+          
+                </div>
+      </button>
 
-      <buttom type="button" class="email-bt callback_email">
+      <button type="button" class="email-bt callback_email">
         <div class="text-call callback_email">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <NavLink className="noBr" to="/contacts"><span >Зворотній зв’язок</span></NavLink>
         </div>
-      </buttom>
+      </button>
 
       <footer>
                 

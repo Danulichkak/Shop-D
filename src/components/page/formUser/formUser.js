@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './formUser.css';
-import { tsConstructSignatureDeclaration } from '@babel/types';
+
 
 class Form extends Component{
 
@@ -38,7 +38,6 @@ class Form extends Component{
         console.log (JSON.stringify(this.state));
         event.preventDefault();
     }
-        
 
     render(){
         return (
@@ -86,12 +85,10 @@ class Form extends Component{
                         onChange={this.handlechangeall}/><br/>
                 
                     <input className='formTable' type="submit" value="Оформити замовлення"/><br/>
-                    <span>Підтверджуючи замовлення ви погоджуєтеся з <a href = "" >політикою конфіденційності</a></span>
-                
+                    <span>Підтверджуючи замовлення ви погоджуєтеся з <a className='privPolit' href = "" >політикою конфіденційності</a></span>
                 </form>
             </div>
         );
-        
     }
 };
 

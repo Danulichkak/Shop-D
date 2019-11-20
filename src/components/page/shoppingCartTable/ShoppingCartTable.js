@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './shoppingCartTable.css';
 import { connect } from 'react-redux';
+import {Route, NavLink} from 'react-router-dom';
+import Stationery from '../Stationery';
 import Form from '../formUser/formUser';
 import {
     productAddedToCart,
@@ -59,8 +61,9 @@ const ShoppingCartTable = ({items, total, onIncrease, onDecrease, onDelete }) =>
            
             </div>
             <button
-                className="btn buying" title="оформити замовлення">
-               породовжити покупки
+                className="btn buying" title="Повернутись до товарів">
+               <NavLink className="buying" to="/stationery">Повернутись до товарів</NavLink>
+        
                
             </button>
             

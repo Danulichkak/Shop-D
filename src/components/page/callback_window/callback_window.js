@@ -23,13 +23,16 @@ class CallbackForm extends Component{
         alert ('Скоро з вами зв’яжеться оператор');
         console.log (JSON.stringify(this.state));
         event.preventDefault();
+
+
+        
     }
 
     render(){
         return (
-            <div className ='formUser'>
+            <div className ='callbackFormUser'>
                 <form onSubmit = {this.handleSubmit}>
-                    <label>Ваше Ім’я:</label>
+                    <label>Ім’я:</label>
                     <input 
                         type="text"
                         name ="firstName" 
@@ -43,8 +46,8 @@ class CallbackForm extends Component{
                         name ="phone"
                         value={this.state.phone}
                         onChange={this.handlechangeall}/><br/>
-                    <input className='formTable' type="submit" value="Зателефонувати мені"/><br/>
-                    <span>Підтверджуючи замовлення ви погоджуєтеся з <a href = "" >політикою конфіденційності</a></span>
+                    <input className='formTable' type="submit" value="Замовити"/><br/>
+                    
                 
                 </form>
             </div>

@@ -19,6 +19,10 @@
 
 /*---------contacts---------*/
  
+.contacts a:hover{
+    color: rgb(48, 9, 9);
+    
+}
 
 /*---------multimediaTech---------*/   
 
